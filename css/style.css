@@ -362,17 +362,8 @@ padding-top: 0px;
 display: flex;
 position: relative;
 }
-.images-text{
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color:var(--primery-white-color);
-}
 
-.images-tumb{
+.images-thumb{
 position: absolute;
 display: flex;
 height: 70px;
@@ -382,6 +373,18 @@ align-items: center;
 bottom: 0px;
 background-color: rgba(47, 48, 58, 0.8);
 }
+
+.images-text{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--primery-white-color);
+}
+
+
 
 
 .images-list {
@@ -654,6 +657,38 @@ flex-basis: calc(100% / 3 - var(--card-set-gape));
 margin-left:var(--card-set-gape);
 margin-top:var(--card-set-gape);
 }
+/* эффект overlok */
+.benefits-img{
+display: flex;
+position: relative;
+}
+
+.img-thumb{
+position: absolute;
+display: block;
+height: 100%;
+width: 100%;
+opacity: 0;
+background-color: rgba(33, 150, 243, 0.9);
+}
+
+/* hover всей карточки */
+.card:hover .img-thumb{
+opacity: 1;
+}
+
+.img-text{
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+color: var(--primery-white-color);
+padding: 63px 24px ;
+/* background-color: #2F303A; */
+}
+
+
+
 /* эффект тени на ховер */
 
 .card-shadow{
