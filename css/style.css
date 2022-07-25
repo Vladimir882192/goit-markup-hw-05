@@ -131,6 +131,7 @@ margin-right: 0px;
 /* site nav */
 .site-nav .link {
 display: block;
+position: relative;
 padding-top: 32px;
 padding-bottom: 32px;
 
@@ -148,7 +149,18 @@ color:var(--accent-color) ;
 .site-nav .link.current{
 color:var(--accent-color);
 }
-
+.site-nav .link.current::after {
+display: block;
+position: absolute;
+bottom: 0px;
+left: 0px;
+right: 0px;
+content: "";
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: var(--accent-color);
+}
 
 /* auth-nav */
 .auth-nav{
