@@ -59,7 +59,7 @@
             для вашего бизнеса
           </h1>
           <!-- кнопка -->
-          <button type="button" class="hero-button primary">Заказать услугу</button>
+          <button type="button" class="hero-button primary" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- секция особенности -->
@@ -127,50 +127,36 @@
           <ul class="images-list list">
             <li class="item">
               <div class="imag-card">
-                <img 
-                  src="./images/img-1.jpg" 
-                  alt="Создание баз данных" 
-                  width="370" 
-                  height="294" />
-              <div class="images-thumb">
-                <p class="images-text"> Десктопные приложения </p>
+                <img src="./images/img-1.jpg" alt="Создание баз данных" width="370" height="294" />
+                <div class="images-thumb">
+                  <p class="images-text">Десктопные приложения</p>
+                </div>
               </div>
-              </div>
-              
-
             </li>
 
             <li class="item">
               <div class="imag-card">
                 <img
-                src="./images/img-2.jpg"
-                alt="Синхронизация приложений"
-                width="370"
-                height="294"
-              />
+                  src="./images/img-2.jpg"
+                  alt="Синхронизация приложений"
+                  width="370"
+                  height="294"
+                />
 
-              <div class="images-thumb">
-                <p class="images-text"> Мобильные приложения </p>
+                <div class="images-thumb">
+                  <p class="images-text">Мобильные приложения</p>
+                </div>
               </div>
-
-              </div>
-              
             </li>
 
             <li class="item">
               <div class="imag-card">
-                <img 
-                src="./images/img-3.jpg" 
-                alt="Подбор цвета" 
-                width="370" 
-                height="294" />
+                <img src="./images/img-3.jpg" alt="Подбор цвета" width="370" height="294" />
 
                 <div class="images-thumb">
-                <p class="images-text"> Дизайнерские решения </p>
+                  <p class="images-text">Дизайнерские решения</p>
                 </div>
-
               </div>
-              
             </li>
           </ul>
         </div>
@@ -421,7 +407,6 @@
     </main>
 
     <!-- Футер -->
-
     <footer class="page-footer">
       <div class="container">
         <div class="contact-info">
@@ -484,5 +469,18 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>Услуга</p>
+
+        <button type="button" class="button-close" data-modal-close>
+          <svg class="icon-modal">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
