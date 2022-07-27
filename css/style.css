@@ -173,9 +173,8 @@ color:var(--accent-color);
 .site-nav .link.current::after {
 display: block;
 position: absolute;
-bottom: 0px;
+bottom: -1px;
 left: 0px;
-right: 0px;
 content: "";
 width: 100%;
 height: 4px;
@@ -273,6 +272,8 @@ text-transform: uppercase;
 /* button index.html*/
 
 .button{cursor: pointer;}
+.hero-button.primary{cursor: pointer;}
+.button-close{cursor: pointer;}
 
 .hero-button{
 display:inline-block;
